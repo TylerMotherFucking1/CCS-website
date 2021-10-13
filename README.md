@@ -19,7 +19,7 @@ python manage.py makemigrations
 python manage.py migrate
 
 ## create superuser
-python manage.py cretesuperuser
+python manage.py createsuperuser
 
 ## install all reactjs packages from package.json
 npm install 
