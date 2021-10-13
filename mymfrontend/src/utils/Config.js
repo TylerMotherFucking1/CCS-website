@@ -9,9 +9,22 @@ class Config{
     static homeUrl = "/home"
     static logoutPage = "/logout"
 
+    // admin website
     static sidebarItem=[
         {"index":"0", "title":"Home", "url":"/home", "icons":"home"},
         {"index":"1", "title":"Client", "url":"/client", "icons":"face"},
+    ]
+
+    // counselling website
+    static TopNavBarItem=[
+        {"index":"0", "title":"", "url":"/", "image":"Taylor icon"},
+        {"index":"1", "title":"About Us", "url":"#", "image":""},
+        {"index":"2", "title":"Services", "url":"#", "image":""},
+        {"index":"3", "title":"", "url":"#", "image":"CSS logo"},
+        {"index":"4", "title":"Team", "url":"#", "image":""},
+        {"index":"5", "title":"Contact Us", "url":"#", "image":""},
+        {"index":"6", "title":"FAQ", "url":"#", "image":""},
+        {"index":"7", "title":"Login", "url":"counsellinglogin", "image":""},
     ]
 }
 

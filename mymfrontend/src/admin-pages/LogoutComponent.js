@@ -5,7 +5,7 @@ import AuthHandler from '../utils/AuthHandler'
 class LogoutComponent extends React.Component{
     render(){
         AuthHandler.logoutUser()
-        return <Redirect to="/" />
+        return <Redirect to="/adminlogin" />
     }
 }
 export default LogoutComponent

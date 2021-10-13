@@ -1,6 +1,6 @@
 import { Route, Redirect } from 'react-router-dom'
 import AuthHandler from './AuthHandler'
-import MainComponent from '../components/MainComponent'
+import MainComponent from '../admin-components/MainComponent'
 
 export var PrivateRouteNew = ({ page, activepage, ...rest }) => {
     // simple private route
@@ -11,8 +11,9 @@ export var PrivateRouteNew = ({ page, activepage, ...rest }) => {
             // so data can be passed to diff component/pages 
             render={(props) =>
                 AuthHandler.loggedIn() ? (
+                    // for adminpages to load all the components
                 <MainComponent page={page} activepage={activepage} {...props} />
-                ) : <Redirect to='/' />}
+                ) : <Redirect to='/adminlogin' />}
         />
     )
 }
