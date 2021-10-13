@@ -17,14 +17,12 @@ class Config{
 
     // counselling website
     static TopNavBarItem=[
-        {"index":"0", "title":"", "url":"/", "image":"Taylor icon"},
-        {"index":"1", "title":"About Us", "url":"#", "image":""},
-        {"index":"2", "title":"Services", "url":"#", "image":""},
-        {"index":"3", "title":"", "url":"#", "image":"CSS logo"},
-        {"index":"4", "title":"Team", "url":"#", "image":""},
-        {"index":"5", "title":"Contact Us", "url":"#", "image":""},
-        {"index":"6", "title":"FAQ", "url":"#", "image":""},
-        {"index":"7", "title":"Login", "url":"counsellinglogin", "image":""},
+        {"index":"0", "title":"About Us", "url":"/about", "image":""},
+        {"index":"1", "title":"Services", "url":"#", "image":""},
+        {"index":"2", "title":"", "url":"/", "image":"CSS logo"},
+        {"index":"3", "title":"Team", "url":"#", "image":""},
+        {"index":"4", "title":"Contact Us", "url":"#", "image":""},
+        {"index":"5", "title":"FAQ", "url":"#", "image":""},
     ]
 }
 

@@ -15,6 +15,7 @@ import EditAssessment from './admin-pages/EditAssessment'
 import HomePage from './counselling-pages/HomePage'
 import CounsellingLogin from './counselling-pages/Login'
 import { PrivateRoute } from './utils/PrivateRoute'
+import About from './counselling-pages/About'
 
 ReactDOM.render(
     <Router>
@@ -22,8 +23,9 @@ ReactDOM.render(
             {/* placeholder method for counselling page */}
             <PrivateRoute exact path="/" activepage="1" page={HomePage}></PrivateRoute>
             <PrivateRoute exact path="/counsellinglogin" activepage="0" page={CounsellingLogin}></PrivateRoute>
+            <PrivateRoute exact path="/about" activepage="0" page={About}></PrivateRoute>
 
-
+            {/* admin pages */}
             <Route exact path="/adminlogin" component={Login}></Route>
             <Route exact path={Config.logoutPage} component={LogoutComponent}></Route>
             <PrivateRouteNew exact path="/home" activepage="0" page={HomeComponent}></PrivateRouteNew>

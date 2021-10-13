@@ -3,23 +3,14 @@ import Navbar from './Navbar'
 import Overlay from './Overlay'
 import GoogleFontLoader from 'react-google-font-loader'
 import "adminbsb-materialdesign/css/themes/all-themes.css"
+import "adminbsb-materialdesign/css/style.css"
 
 class MainComponent extends React.Component {
 
     state = {
-        bodyClass: "theme-red ls-closed",
+        bodyClass: "theme-red",
         displayOverlay: "none",
         width: window.screen.width,
-    }
-    // when clicking the side bar
-    onBarClick = () => {
-        if (this.state.bodyClass == "theme-red ls-closed overlay-open") {
-            this.setState({ bodyClass: "theme-red ls-closed" })
-            this.setState({ displayOverlay: "none" })
-        } else if (this.state.bodyClass == "theme-red ls-closed") {
-            this.setState({ bodyClass: "theme-red ls-closed overlay-open" })
-            this.setState({ displayOverlay: "block" })
-        }
     }
 
     // when screen size changes, will not have refresh
@@ -55,7 +46,7 @@ class MainComponent extends React.Component {
         console.log(this.props)
         if (this.state.width > 1150) {
             // set the theme colour of website using bootstrap CSS
-            document.getElementById("root").className = ""
+            document.getElementById("root").className = "theme-blue"
         } else {
             // hard coded html class
             document.getElementById("root").className = this.state.bodyClass
