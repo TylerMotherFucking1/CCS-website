@@ -1,6 +1,5 @@
 import React from 'react'
 import Overlay from './Overlay'
-import PageLoader from './PageLoader'
 import Navbar from './Navbar'
 import Sidebar from './Sidebar'
 import GoogleFontLoader from 'react-google-font-loader'
